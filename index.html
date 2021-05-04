@@ -22,271 +22,302 @@
                 background-color: rgb(158, 164, 189);
                 font-size: 18px;
                 text-align: justify;
+                margin: auto;
             }
 
             .caracter{
                 color:rgb(173, 37, 37);
                 font-family: Arial, Helvetica, sans-serif;
              }
+
+
             p{
                 font-family: Arial, Helvetica, monospace, sans-serif;
             }
             
+            .menu-principal{
+                background-color: rgb(171, 196, 218);
+                width: 90%;                
+                position: relative;
+                top: 0px;
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align:justify;
+                border: 1px solid rgb(145, 0, 0);
+                border-top: 10px solid purple;
+                padding: 0px;
+                z-index: 2;
+            }
             .contenedor{
                 background-color: rgb(205, 226, 245);
-                width: 80%;
-                margin: 15px;
+                width: 90%;
+                position: absolute;
+                top: 300px;
+                margin-left: 100px;
+                margin-right: 100px;  
+                z-index: 1;             
+            }
+
+            .pie{
+                position: relative;
+                margin: auto;
             }
             
             .imagen{
                 width: 300px;
-                height: auto;
+                height: auto;                
+                margin-right: auto;
+                margin-bottom: auto;
+                border: 6px groove red;
+                float:left;                
             }
         </style>
     </head>
     <body>
      
-        <!-- Indice para las recetas -->
-
-        <h1>Libro de <span class="caracter">Recetas</span></h1>
-        
-        <h2>Recetas:</h2>
-        
-        <ol class="caracter">
-            <li><a href="#Receta1">Receta 1: Lentejas estofadas</a></li>
-            <li><a href="#Receta2">Receta 2: Salmorejo cordobés</a></li>
-            <li><a href="#Receta3">Receta 3: Tarta de manzana de Normandía</a></li>
-        </ol>
-        
-        <!-- Lentejas estofadas -->
-        <div class="contenedor">
-            <h2 class="caracter" id="Receta1">Receta 1: Lentejas estofadas</h2>
-
-            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Lentejas_estilo_de_la_abuela.jpg" alt="Lentejas estofadas" height="400px">
-
-            <ul>
-                <li>Tiempo: 2 horas 30 segundos</li>
-                <li>Comensales: 4 personas_</li>
-            </ul>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Ingredientes</th>
-                        <th>Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Lentejas pardinas</th>
-                        <th>300 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>Ternera para guisar</th>
-                        <th>1/2 kg</th>
-                    </tr>
-                    <tr>
-                        <th>Cabeza de ajos seco</th>
-                        <th>1 unidad</th>
-                    </tr>
-                    <tr>
-                        <th>Zanahorias</th>
-                        <th>4 unidades</th>
-                    </tr>
-                    <tr>
-                        <th>Chorizo</th>
-                        <th>2 unidades</th>
-                    </tr><tr>
-                        <th>Hoja de laurel</th>
-                        <th>1 Unidad</th>
-                    </tr><tr>
-                        <th>Pastilla de caldo de carne</th>
-                        <th>1 unidad</th>
-                    </tr><tr>
-                        <th>Aceite y sal</th>
-                        <th></th>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p><strong>Paso 1:</strong> Poner a remojo las lentejas en un bol con agua (deben estar totalmente cubiertas de sobra 
-                porque crecerán) durante varias horas (2-3 horas mínimo, aunque puedes ponerlas la noche anterior).
-            </p>
-
-            <p><strong>Paso 2:</strong> Cortar en rodajas el chorizo, y la ternera en taquitos o tiras.
-
-            </p>
-            <p><strong>Paso 3:</strong> Lavar las zanahorias y cortarlas por la mitad (si las cortas más pequeñas podrían deshacerse durante la cocción). Pelar los dientes de ajo y la cebolla.
-            </p>
-            <p><strong>Paso 4:</strong> En una cacerola, añadir aceite para cubrir ligeramente el fondo y poner el fuego a media temperatura. Añadir el chorizo y saltear unos minutos, a continuación incluir los ajos y la cebolla y seguir salteando, y por último la ternera y las zanahorias.
-            </p>
-            <p><strong>Paso 5:</strong> Cuando todo esté ligeramente dorado, añadir las lentejas con la propia agua en la que han estado en remojo, y las hojas de laurel (4-5 hojas).
-            </p>
-            <p><strong>Paso 6:</strong> El mismo bol en el que han estado a remojo las lentejas, llenar de agua y depositar esta cantidad en la olla, de forma que quede todo cubierto de agua. Subir la temperatura del fuego al máximo, y cuando empiece a hervir, volver a bajar el fuego y dejarlo lento, casi al mínimo, y mantener cociendo unas 2 horas, removiendo de vez en cuando. La olla debe estar tapada, y la temperatura del fuego debe seguir cocinando las lentejas estofadas pero sin que se salgan de la olla.
-            </p>
-
-            <!-- Salmorejo -->
-
-            <h2 class="caracter" id="Receta2">Receta 2: Salmorejo</h2>
-            
-            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Salmorejo_cordouan.JPG/1200px-Salmorejo_cordouan.JPG" alt="Salmorejo Córdobes" height="400px">
-            
-            <ul>
-                <li>Tiempo: 45 minutos</li>
-                <li>Comensales: 4 personas</li>
-            </ul>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Ingredientes</th>
-                        <th>Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Aceite de oliva</th>
-                        <th>150 ml</th>
-                    </tr>
-                    <tr>
-                        <th>Tomates rojos bien maduros</th>
-                        <th>1 kg</th>
-                    </tr>
-                    <tr>
-                        <th>Telera cordobesa</th>
-                        <th>200 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>Diente de Ajo</th>
-                        <th>1 unidad</th>
-                    </tr>
-                    <tr>
-                        <th>Sal</th>
-                        <th>10 gramos</th>
-                    </tr>
-                </tbody>
-            </table>
-            
-            
-            <h3 class="caracter">Preparación del Salmorejo</h3>
-            <p>El salmorejo es una crema servida habitualmente como primer plato. Su elaboración es muy sencilla e incluye un majado o triturado de miga de pan, si es telera 
-                (pan de masa dura típico en Andalucía) mejor, ajo, aceite de oliva virgen extra, sal y tomates.</p>
-            
-            <p><strong>Paso 1:</strong> Limpiamos bien los tomates y los cortamos en cuartos, los añadimos a un bol grande y trituramos con la batidora hasta que nos quede una salsa líquida.
-            </p>
-
-            <p><strong>Paso 2:</strong> Pasamos esta salsa por un colador para retirar posibles trozos de piel y pequeñas pepitas que hayan quedado al batirlos.
-            </p>
-            <p><strong>Paso 3:</strong> Cortamos el pan en trozos pequeños y los añadimos a la crema de tomate anterior. Los dejamos reposar durante unos 10 minutos. Así ayudamos a que el pan se ablande si está muy duro y será mucho más fácil de batir.
-            </p>
-            <p><strong>Paso 4:</strong> Pelamos el ajo y, como lo vamos a usar en crudo, le quitamos el centro para que no repita. Lo añadimos al tomate con el pan. Echamos el aceite de oliva virgen extra y la sal. Lo pasamos todo por la batidora hasta que nos quede lo más fino posible. Probamos si esta bien de sal y si no rectificamos con un poco más.
-            </p>
-            <p><strong>Paso 5:</strong> Sólo nos queda meter el bol en la nevera y dejar que se enfríe. En un par de horas lo tendréis bien fresquito y perfecto para probar el mejor salmorejo cordobés.
-            </p>
-            <p><strong>Paso 6:</strong> A la hora de la presentación, lo mejor es ponerlo en un plato hondo o cuenco. Espolvoreamos con unas virutas de jamón serrano o ibérico con un punto (10 segundos) de microondas. Así conseguiréis un toque crujiente.
-            </p><strong>Paso 7:</strong>Además el huevo cocido y unas gotitas de aove le quedan perfecto. Pero no tiene por qué quedar ahí el tema, el consejo regulador del salmorejo también nos recomienda: pepino, pimiento, cebolla, zanahoria, remolacha o melocotón. Esto os lo dejo a vuestro gusto, buen provecho.
-            </p>
-            </p>
-
-        
-            <!-- Tarta de manzana de Normandía -->
-
-            <h2 class="caracter" id="Receta3">Receta 3: Tarta de manzana de Normandía</h2>
-            
-            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tarte.tatin.wmt.jpg/1200px-Tarte.tatin.wmt.jpg" alt="Salmorejo Córdobes" height="400px">
-            
-            <ul>
-                <li>Tiempo: 100 minutos</li>
-                <li>Comensales: 10 personas</li>
-            </ul>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Ingredientes</th>
-                        <th>Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>harina de trigo </th>
-                        <th>200 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>azúcar glass o en polvo</th>
-                        <th>90 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>mantequilla en tacos</th>
-                        <th>100 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>almendra molida</th>
-                        <th>30 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>Huevo campero</th>
-                        <th>1 Unidad </th>
-                    </tr>
-                    <tr>
-                        <th>Sal</th>
-                        <th>2 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>Nata</th>
-                        <th>20o ml </th>
-                    </tr>
-                    <tr>
-                        <th>manzana Golden</th>
-                        <th>4 Unidades </th>
-                    </tr>
-                    <tr>
-                        <th>azúcar</th>
-                        <th>100 gramos/th>
-                    </tr>
-                    <tr>
-                        <th>Huevos camperos</th>
-                        <th> 3 unidades</th>
-                    </tr>
-                    <tr>
-                        <th>Almendra molida</th>
-                        <th> 200 gramos</th>
-                    </tr>
-                    <tr>
-                        <th>esencia de vainilla</th>
-                        <th>10 ml </th>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            
-            <h3 class="caracter">Cómo hacer una tarta de manzana al estilo de Normandía.</h3>
-
-            <p><strong>Paso 1:</strong> Empezamos preparando la masa quebrada. Podemos incluso prepararla el día anterior y dejarla en el frigorífico, para tener menos trabajo el día siguiente.
-            </p>
-
-            <p><strong>Paso 2:</strong> En un bol grande, mezclamos la harina, el azúcar, la almendra y la sal. Añadimos la mantequilla fría y usamos una rasqueta de cocina para ir incorporándola sin que se derrita. La vamos cortando con la rasqueta y mezclando. Acabamos de mezclar con las manos hasta conseguir una textura parecida a la arena húmeda.
-            </p>
-            <p><strong>Paso 3:</strong> Añadimos el huevo batido y mezclamos ligeramente con las manos. Enharinamos una superficie limpia y lisa y pasamos la mezcla para acabar de amasar. No necesita demasiado amasado, solo hasta que los ingredientes queden bien integrados y obtengamos una masa firme y compacta.
-            </p>
-            <p><strong>Paso 4:</strong> Formamos una bola con la masa, la envolvemos con film y guardamos una hora en el frigorífico (o hasta el día siguiente si queremos hacer la tarta en dos tandas).
-            </p>
-            <p><strong>Paso 5:</strong> Precalentamos el horno a 180º C.
-            </p>
-            <p><strong>Paso 6:</strong> Sacamos la masa del frigorífico, si la hemos dejado toda la noche la dejamos a temperatura ambiente 20-30 minutos para que se ablande. La extendemos con un rodillo, damos forma redonda y la pasamos a un molde tipo quiche. Pinchamos la masa con un tenedor, ponemos encima papel vegetal y unas legumbres secas o pesos aptos para hornear. Horneamos 15 minutos a 180º.
-            </p>
-            <p><strong>Paso 7:</strong> Preparamos el relleno. Llevamos a ebullición la nata y la vainilla en un cazo a fuego medio. Podemos aromatizar la nata del relleno también con una rama de canela previamente. La pasamos a un bol grande y mezclamos con los huevos batidos y el azúcar. Añadimos la almendra y mezclamos hasta integrar. Reservamos
-            </p>
-            <p><strong>Paso 8:</strong> Pelamos las manzanas y las cortamos en trozos pequeños. Sacamos la masa del horno y quitamos el papel y los garbanzos. Ponemos dentro los trozos de manzana repartidos por toda la superficie. Vertemos el contenido del bol sobre las manzanas. Si doramos previamente las manzanas troceadas con mantequilla y azúcar quedará deliciosa.
-            </p>
-            <p><strong>Paso 8:</strong> Y horneamos 45 minutos a 180º C con calor arriba y abajo (sin aire caliente) en la bandeja central del horno. Si empieza a dorarse demasiado la parte superior, cubrimos con un papel vegetal o de aluminio para evitar que se queme. Sacamos del horno y dejamos templar. Desmoldamos y servimos templada o fría.
-            </p>
+    <!-- Indice para las recetas -->
+    <div class="menu-principal">
+           <h1>Libro de <span class="caracter">Recetas</span></h1>
+           
+           <h2>Recetas:</h2>
+           
+            <ol class="caracter">
+                <li><a href="#Receta1">Receta 1: Lentejas estofadas</a></li>
+                <li><a href="#Receta2">Receta 2: Salmorejo cordobés</a></li>
+                <li><a href="#Receta3">Receta 3: Tarta de manzana de Normandía</a></li>
+            </ol>
     </div>
+            
+            <!-- Lentejas estofadas -->
+            <div class="contenedor">
+                <h2 class="caracter" id="Receta1">Receta 1: Lentejas estofadas</h2>
 
+                <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Lentejas_estilo_de_la_abuela.jpg" alt="Lentejas estofadas" height="400px">
 
-        
-    <p><em>Source: <a href="?">Web de recetas</a></em></p>
-    
+                <ul>
+                    <li>Tiempo: 2 horas 30 segundos</li>
+                    <li>Comensales: 4 personas_</li>
+                </ul>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ingredientes</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Lentejas pardinas</th>
+                            <th>300 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>Ternera para guisar</th>
+                            <th>1/2 kg</th>
+                        </tr>
+                        <tr>
+                            <th>Cabeza de ajos seco</th>
+                            <th>1 unidad</th>
+                        </tr>
+                        <tr>
+                            <th>Zanahorias</th>
+                            <th>4 unidades</th>
+                        </tr>
+                        <tr>
+                            <th>Chorizo</th>
+                            <th>2 unidades</th>
+                        </tr><tr>
+                            <th>Hoja de laurel</th>
+                            <th>1 Unidad</th>
+                        </tr><tr>
+                            <th>Pastilla de caldo de carne</th>
+                            <th>1 unidad</th>
+                        </tr><tr>
+                            <th>Aceite y sal</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Paso 1:</strong> Poner a remojo las lentejas en un bol con agua (deben estar totalmente cubiertas de sobra 
+                    porque crecerán) durante varias horas (2-3 horas mínimo, aunque puedes ponerlas la noche anterior).
+                </p>
+
+                <p><strong>Paso 2:</strong> Cortar en rodajas el chorizo, y la ternera en taquitos o tiras.
+
+                </p>
+                <p><strong>Paso 3:</strong> Lavar las zanahorias y cortarlas por la mitad (si las cortas más pequeñas podrían deshacerse durante la cocción). Pelar los dientes de ajo y la cebolla.
+                </p>
+                <p><strong>Paso 4:</strong> En una cacerola, añadir aceite para cubrir ligeramente el fondo y poner el fuego a media temperatura. Añadir el chorizo y saltear unos minutos, a continuación incluir los ajos y la cebolla y seguir salteando, y por último la ternera y las zanahorias.
+                </p>
+                <p><strong>Paso 5:</strong> Cuando todo esté ligeramente dorado, añadir las lentejas con la propia agua en la que han estado en remojo, y las hojas de laurel (4-5 hojas).
+                </p>
+                <p><strong>Paso 6:</strong> El mismo bol en el que han estado a remojo las lentejas, llenar de agua y depositar esta cantidad en la olla, de forma que quede todo cubierto de agua. Subir la temperatura del fuego al máximo, y cuando empiece a hervir, volver a bajar el fuego y dejarlo lento, casi al mínimo, y mantener cociendo unas 2 horas, removiendo de vez en cuando. La olla debe estar tapada, y la temperatura del fuego debe seguir cocinando las lentejas estofadas pero sin que se salgan de la olla.
+                </p>
+
+                <!-- Salmorejo -->
+
+                <h2 class="caracter" id="Receta2">Receta 2: Salmorejo</h2>
+                
+                <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Salmorejo_cordouan.JPG/1200px-Salmorejo_cordouan.JPG" alt="Salmorejo Córdobes" height="400px">
+                
+                <ul>
+                    <li>Tiempo: 45 minutos</li>
+                    <li>Comensales: 4 personas</li>
+                </ul>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ingredientes</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Aceite de oliva</th>
+                            <th>150 ml</th>
+                        </tr>
+                        <tr>
+                            <th>Tomates rojos bien maduros</th>
+                            <th>1 kg</th>
+                        </tr>
+                        <tr>
+                            <th>Telera cordobesa</th>
+                            <th>200 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>Diente de Ajo</th>
+                            <th>1 unidad</th>
+                        </tr>
+                        <tr>
+                            <th>Sal</th>
+                            <th>10 gramos</th>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
+                <h3 class="caracter">Preparación del Salmorejo</h3>
+                <p>El salmorejo es una crema servida habitualmente como primer plato. Su elaboración es muy sencilla e incluye un majado o triturado de miga de pan, si es telera 
+                    (pan de masa dura típico en Andalucía) mejor, ajo, aceite de oliva virgen extra, sal y tomates.</p>
+                
+                <p><strong>Paso 1:</strong> Limpiamos bien los tomates y los cortamos en cuartos, los añadimos a un bol grande y trituramos con la batidora hasta que nos quede una salsa líquida.
+                </p>
+
+                <p><strong>Paso 2:</strong> Pasamos esta salsa por un colador para retirar posibles trozos de piel y pequeñas pepitas que hayan quedado al batirlos.
+                </p>
+                <p><strong>Paso 3:</strong> Cortamos el pan en trozos pequeños y los añadimos a la crema de tomate anterior. Los dejamos reposar durante unos 10 minutos. Así ayudamos a que el pan se ablande si está muy duro y será mucho más fácil de batir.
+                </p>
+                <p><strong>Paso 4:</strong> Pelamos el ajo y, como lo vamos a usar en crudo, le quitamos el centro para que no repita. Lo añadimos al tomate con el pan. Echamos el aceite de oliva virgen extra y la sal. Lo pasamos todo por la batidora hasta que nos quede lo más fino posible. Probamos si esta bien de sal y si no rectificamos con un poco más.
+                </p>
+                <p><strong>Paso 5:</strong> Sólo nos queda meter el bol en la nevera y dejar que se enfríe. En un par de horas lo tendréis bien fresquito y perfecto para probar el mejor salmorejo cordobés.
+                </p>
+                <p><strong>Paso 6:</strong> A la hora de la presentación, lo mejor es ponerlo en un plato hondo o cuenco. Espolvoreamos con unas virutas de jamón serrano o ibérico con un punto (10 segundos) de microondas. Así conseguiréis un toque crujiente.
+                </p><strong>Paso 7:</strong>Además el huevo cocido y unas gotitas de aove le quedan perfecto. Pero no tiene por qué quedar ahí el tema, el consejo regulador del salmorejo también nos recomienda: pepino, pimiento, cebolla, zanahoria, remolacha o melocotón. Esto os lo dejo a vuestro gusto, buen provecho.
+                </p>
+                </p>
+
+            
+                <!-- Tarta de manzana de Normandía -->
+
+                <h2 class="caracter" id="Receta3">Receta 3: Tarta de manzana de Normandía</h2>
+                
+                <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tarte.tatin.wmt.jpg/1200px-Tarte.tatin.wmt.jpg" alt="Salmorejo Córdobes" height="400px">
+                
+                <ul>
+                    <li>Tiempo: 100 minutos</li>
+                    <li>Comensales: 10 personas</li>
+                </ul>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Ingredientes</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>harina de trigo </th>
+                            <th>200 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>azúcar glass o en polvo</th>
+                            <th>90 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>mantequilla en tacos</th>
+                            <th>100 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>almendra molida</th>
+                            <th>30 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>Huevo campero</th>
+                            <th>1 Unidad </th>
+                        </tr>
+                        <tr>
+                            <th>Sal</th>
+                            <th>2 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>Nata</th>
+                            <th>20o ml </th>
+                        </tr>
+                        <tr>
+                            <th>manzana Golden</th>
+                            <th>4 Unidades </th>
+                        </tr>
+                        <tr>
+                            <th>azúcar</th>
+                            <th>100 gramos/th>
+                        </tr>
+                        <tr>
+                            <th>Huevos camperos</th>
+                            <th> 3 unidades</th>
+                        </tr>
+                        <tr>
+                            <th>Almendra molida</th>
+                            <th> 200 gramos</th>
+                        </tr>
+                        <tr>
+                            <th>esencia de vainilla</th>
+                            <th>10 ml </th>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+                
+                <h3 class="caracter">Cómo hacer una tarta de manzana al estilo de Normandía.</h3>
+
+                <p><strong>Paso 1:</strong> Empezamos preparando la masa quebrada. Podemos incluso prepararla el día anterior y dejarla en el frigorífico, para tener menos trabajo el día siguiente.
+                </p>
+
+                <p><strong>Paso 2:</strong> En un bol grande, mezclamos la harina, el azúcar, la almendra y la sal. Añadimos la mantequilla fría y usamos una rasqueta de cocina para ir incorporándola sin que se derrita. La vamos cortando con la rasqueta y mezclando. Acabamos de mezclar con las manos hasta conseguir una textura parecida a la arena húmeda.
+                </p>
+                <p><strong>Paso 3:</strong> Añadimos el huevo batido y mezclamos ligeramente con las manos. Enharinamos una superficie limpia y lisa y pasamos la mezcla para acabar de amasar. No necesita demasiado amasado, solo hasta que los ingredientes queden bien integrados y obtengamos una masa firme y compacta.
+                </p>
+                <p><strong>Paso 4:</strong> Formamos una bola con la masa, la envolvemos con film y guardamos una hora en el frigorífico (o hasta el día siguiente si queremos hacer la tarta en dos tandas).
+                </p>
+                <p><strong>Paso 5:</strong> Precalentamos el horno a 180º C.
+                </p>
+                <p><strong>Paso 6:</strong> Sacamos la masa del frigorífico, si la hemos dejado toda la noche la dejamos a temperatura ambiente 20-30 minutos para que se ablande. La extendemos con un rodillo, damos forma redonda y la pasamos a un molde tipo quiche. Pinchamos la masa con un tenedor, ponemos encima papel vegetal y unas legumbres secas o pesos aptos para hornear. Horneamos 15 minutos a 180º.
+                </p>
+                <p><strong>Paso 7:</strong> Preparamos el relleno. Llevamos a ebullición la nata y la vainilla en un cazo a fuego medio. Podemos aromatizar la nata del relleno también con una rama de canela previamente. La pasamos a un bol grande y mezclamos con los huevos batidos y el azúcar. Añadimos la almendra y mezclamos hasta integrar. Reservamos
+                </p>
+                <p><strong>Paso 8:</strong> Pelamos las manzanas y las cortamos en trozos pequeños. Sacamos la masa del horno y quitamos el papel y los garbanzos. Ponemos dentro los trozos de manzana repartidos por toda la superficie. Vertemos el contenido del bol sobre las manzanas. Si doramos previamente las manzanas troceadas con mantequilla y azúcar quedará deliciosa.
+                </p>
+                <p><strong>Paso 8:</strong> Y horneamos 45 minutos a 180º C con calor arriba y abajo (sin aire caliente) en la bandeja central del horno. Si empieza a dorarse demasiado la parte superior, cubrimos con un papel vegetal o de aluminio para evitar que se queme. Sacamos del horno y dejamos templar. Desmoldamos y servimos templada o fría.
+                </p>
+        </div>
+
+    <div class="pie"> 
+        <p><em>Source: <a href="?">Web de recetas</a></em></p>
+    </div>
+            
+       
     </body>
 </html>
