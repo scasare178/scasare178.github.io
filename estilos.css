@@ -1,0 +1,71 @@
+<style>
+    h2 {
+        color: rgb(46, 4, 85);
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2,5em;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .caracter{
+        color:rgb(173, 37, 37);
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+
+    p{
+        font-family: Arial, Helvetica, monospace, sans-serif;
+    }
+    
+    .menu-principal{
+        position: relative;
+        width:100%;                
+        background-color: rgb(171, 196, 218);                                        
+        border: 1px solid rgb(145, 0, 0);
+        border-top: 10px solid purple;
+    }
+    .contenedor{
+        background-color: rgb(205, 226, 245);
+        position: relative;
+        width: 80%;                
+        margin: auto;
+        text-align: justify;                                          
+    }
+
+    .contenedor-imagen{
+        width: 50%;
+        margin: auto;
+        border: 1px solid rgb(145, 0, 0);
+        text-align: left;
+    }
+
+    .pie{
+        position: relative;
+        text-align: center;
+        float: none;
+    }
+    
+    .imagen{
+        width: 300px;
+        height: auto;                
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 5px;                                
+        border: 6px groove red;
+        float: left;
+    }
+
+    body {                
+        background-color: rgb(158, 164, 189);
+        font-size: 18px;;
+    }
+    a:hover, a:active, a:focus { 
+        background-color: rgb(126, 138, 146);
+    }
+</style>
