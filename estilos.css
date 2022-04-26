@@ -24,8 +24,10 @@
     }
     
     .menu-principal{
-        position: relative;
-        width:100%;               
+        position: sticky;
+        top:0;
+        z-index: 2;
+        width: 100%;
         background-color: rgb(171, 196, 218);                                        
         border: 1px solid rgb(145, 0, 0);
         border-top: 10px solid purple;
@@ -33,9 +35,10 @@
     .contenedor{
         background-color: rgb(205, 226, 245);
         position: relative;
-        margin-top: auto ;
-        padding: 5px;
-        width: 80%;                
+        z-index: 1;
+        width: 80%;
+        margin: auto;
+        padding: 5px;                        
         text-align: justify;
         line-height: 1,5em;                                          
     }
@@ -49,8 +52,7 @@
 
     .pie{
         position: relative;
-        text-align: center;
-        float: none;
+        text-align: center;        
         clear: both;
     }
     
@@ -66,7 +68,8 @@
 
     body {                
         background-color: rgb(158, 164, 189);
-        font-size: 18px;;
+        font-size: 18px;
+        margin-top: 0px;
     }
     a:hover, a:active, a:focus { 
         background-color: rgb(126, 138, 146);
